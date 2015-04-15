@@ -1,5 +1,5 @@
 (function($) {
-	$.fn.mymodule = function(options, ArrClass) {
+	$.fn.mymodule = function(options) {
 		var Option = {
 				allowmove: true,
 				wrap: "#wrap",
@@ -57,17 +57,14 @@
 					} else {
 						j = i + 1
 					}
-					removeClass_ac(arr_addClass, Option.m_i)
 					Option.m_i = j
 					Option.m_zindex(j)
 					Option.m_top(i)
 					$(Option.m_box).eq(j).show().animate({
 						"top": 0
 					}, Option.overtime)
-					$(Option.m_box).eq(j).show().animate({"top":0},Option.overtime)
 					$(Option.m_box).eq(i).slideUp(Option.overtime+100, function() {
 						Option.allowmove = true
-						addClass_ac(arr_addClass, Option.m_i)
 					})
 				},
 				m_touchdown: function(i) { //向下滑
@@ -78,14 +75,12 @@
 					} else {
 						j = i - 1
 					}
-					removeClass_ac(arr_addClass, Option.m_i)
 					Option.m_i = j
 					Option.m_zindex(j, 0)
 					$(Option.m_box).eq(j).css("top", 0)
 					$(Option.m_box).eq(j).slideDown(Option.overtime, function() {
 						$(Option.m_box).eq(i).hide();
 						Option.allowmove = true;
-						addClass_ac(arr_addClass, Option.m_i)
 					})
 				}
 			}
@@ -98,29 +93,6 @@
 					$(Option.m_box).first().removeClass(this.blur);
 				}
 			}
-			//class 与 样式 
-		var arr_addClass = [
-			[
-				[],
-				[]
-			]
-		]
-		$.extend(true, arr_addClass, ArrClass); //覆盖追加
-		//添加css3样式效果
-		function addClass_ac(arr, i) {
-				var arr_length = arr[i][0].length;
-				for (a = 0; a < arr_length; a++) {
-					$(arr[i][0][a]).addClass(arr[i][1][a])
-				}
-			}
-			// 移除CSS3 效果
-
-		function removeClass_ac(arr, i) {
-			var arr_length = arr[i][0].length;
-			for (a = 0; a < arr_length; a++) {
-				$(arr[i][0][a]).removeClass(arr[i][1][a])
-			}
-		}
 
 
 
