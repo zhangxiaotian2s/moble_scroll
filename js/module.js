@@ -93,9 +93,6 @@
 					$(Option.m_box).first().removeClass(this.blur);
 				}
 			}
-
-
-
 		//阻止默认的滑动效果
 		$("body").bind('touchmove', function(e) {
 				e.preventDefault()
