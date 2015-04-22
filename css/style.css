@@ -34,8 +34,8 @@ a{text-decoration: none;}
 .module02{}
 .module03{}
 .tit_h1{ font-size: 36px; top: 20%; left: 20%;}
-.my_des{ font-size: 20px; text-align: center; font-weight:bold ; color: #000; height: 60px; line-height: 60px; width: 100%;  background:url(../images/qxdw_13.png);
-opacity: 0;-webkit-opacity: 0;
+.my_des{ font-size: 20px; text-align: center; font-weight:bold ; color: #000; height: 60px; line-height: 60px; width: 100%;  background:url(../images/gxzy_13.png);
+opacity: 0;-webkit-opacity: 0;-moz-opacity: 0;
 }
 .my_des span{ font-size: 24px;}
 .module01 .my_des{ bottom: 0%;}
@@ -86,28 +86,34 @@ opacity: 0;-webkit-opacity: 0;
 }
 
 
-.up_show1{
-	-webkit-animation: up_show1_ac 0.2s linear forwards;
-	animation: up_show1_ac 0.2s linear forwards;
-}
 .left-fade-in{
 	-webkit-animation: left-fade-in-ac 1.2s linear forwards;
+	-moz-animation: left-fade-in-ac 1.2s linear forwards;
+	-o-animation: left-fade-in-ac 1.2s linear forwards;
 	animation: left-fade-in-ac 1.2s linear forwards;
 }
 .right-fade-in{
 	-webkit-animation: right-fade-in-ac 1.2s linear forwards;
+	-moz-animation: right-fade-in-ac 1.2s linear forwards;
+	-o-animation: right-fade-in-ac 1.2s linear forwards;
 	animation: right-fade-in-ac 1.2s linear forwards;
 }
 .top-fade-in{
 	-webkit-animation: top-fade-in-ac 1.2s linear forwards;
+	-moz-animation: top-fade-in-ac 1.2s linear forwards;
+	-o-animation: top-fade-in-ac 1.2s linear forwards;
 	animation: top-fade-in-ac 1.2s linear forwards;
 }
 .bottom-fade-in{
 	-webkit-animation: bottom-fade-in-ac 1.2s linear forwards;
+	-moz-animation: bottom-fade-in-ac 1.2s linear forwards;
+	-o-animation: bottom-fade-in-ac 1.2s linear forwards;
 	animation: bottom-fade-in-ac 1.2s linear forwards;
 }
 .min-fade-in{
 	-webkit-animation: min-fade-in-ac 1.2s linear forwards;
+	-moz-animation: min-fade-in-ac 1.2s linear forwards;
+	-o-animation: min-fade-in-ac 1.2s linear forwards;
 	animation: min-fade-in-ac 1.2s linear forwards;
 }
 
